@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    android:background="@drawable/rectangle">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <!-- Membuat navigasi -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_back"
+                    android:backgroundTint="@android:color/transparent"
+                    android:contentDescription="back button" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="Tentang Kami"
+                    android:textColor="@color/biruvokasi"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/vokasi"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="-19dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_2"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TENTANG APLIKASI"
+                android:fontFamily="@font/poppins_semibold"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/pinkvokasi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aplikasi ini merupakan aplikasi yang kami rancang untuk kebutuhan Mahasiswa Sekolah Vokasi IPB dalam hal pelaporan. Harapan output dari aplikasi ini adalah kami sebagai tim create dapat meneruskan dan menyortir pelaporan kepada High Table atau pimpinan Sekolah Vokasi IPB, khususnya jajaran dosen hingga Dekan agar masalah yang dilaporkan bisa ditangani atau setidaknya diberikan solusi."
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textAlignment="center"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:textSize="18sp"
+                android:text="Selain dari fitur utama tersebut, kami juga menyediakan fitur tambahan yaitu vokasi 911. Vokasi 911 adalah fitur yang mahasiswa dapat gunakan untuk kebutuhan pelayanan, seperti pelayanan akademik, keuangan, dan lainnya. Mengingat masih banyak mahasiswa Sekolah Vokasi IPB yang belum tahu keberadaan nomor atau langkah untuk menghubungi bagian tersebut." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIM KAMI"
+                android:fontFamily="@font/poppins_semibold"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/pinkvokasi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:justificationMode="inter_word"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:text="Vokasi Melapor! didirikan oleh Ananda Prathama Saputra, Sri Yusrina, A. Nurfitriana, Khaerah Ummah, dan Amelia Sacio Ramadhani, yang dikembangkan pada tahun 2023 sebagai nilai untuk Ujian Tengah Semester."/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="Sekolah Vokasi IPB University"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="Teknologi Rekayasa Perangkat Lunak"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="2022/2023"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

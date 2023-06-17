@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:background="@drawable/background_vokasi_melapor"
+    tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="50dp">
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="117dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/vokasi"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Nama"
+            android:textColor="@color/biruvokasi"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Masukkan Nama"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+        <TextView
+            android:id="@+id/tv_nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="NIM"
+            android:textColor="@color/biruvokasi"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+        <EditText
+            android:id="@+id/et_nim"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Masukkan NIM"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nim" />
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Password"
+            android:textColor="@color/biruvokasi"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/et_nim" />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Masukkan Password"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+        <TextView
+            android:id="@+id/tv_ulangipassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Ulangi Password"
+            android:textColor="@color/biruvokasi"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+        <EditText
+            android:id="@+id/et_ulangipassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Masukkan Kembali Password"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ulangipassword" />
+        <Button
+            android:id="@+id/b_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/biruvokasi"
+            android:text="Daftar"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+        <TextView
+            android:id="@+id/tv_sudahpunyaakun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah Punya Akun? Login Disini"
+            android:textColor="@color/pinkvokasi"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
